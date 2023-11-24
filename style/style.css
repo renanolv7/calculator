@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+.calculadora {
+  width: 450px;
+  background-color: black;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.botoes {
+  padding: 5px;
+}
+.botoes button {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: none;
+  font-size: 25px;
+  font-weight: 400;
+}
+.botoes .dividir,
+.botoes .vezes,
+.botoes .menos,
+.botoes .mais,
+.botoes .igual {
+  background-color: orange;
+  color: white;
+}
+.botoes .porcentagem,
+.botoes .c,
+.botoes .sinal-diferente {
+  background-color: #afafaf;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.line5 .zero {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  width: 45%;
+  padding-left: 40px;
+}
+
+.tela {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  padding: 50px;
+  border: 0;
+  font-size: 50px;
+  border-radius: 20px;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  /* Estilos para smartphones em modo retrato */
+  .calculadora {
+    width: 380px;
+    height: 620px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 | JS (19/10)</title>
+
+    <link rel="stylesheet" href="/style/style.css">
+
+</head>
+
+<body>
+
+    <div class="calculadora">
+
+        <input class="tela" id="tela" type="text">
+
+        <div class="botoes">
+
+            <div class="line1">
+                <button id="ac" class="c" onclick="reset();">C</button>
+                <button id="sinal-diferente" class="sinal-diferente" onclick="click_sinal('?');">+/-</button>
+                <button id="porcentagem" class="porcentagem" onclick="click_sinal('%');">%</button>
+                <button id="dividir" class="dividir" onclick="click_sinal('/');">÷</button>
+            </div>
+
+            <div class="line2">
+                <button id="sete" class="sete" onclick="insert(7);">7</button>
+                <button id="oito" class="oito" onclick="insert(8);">8</button>
+                <button id="nove" class="nove" onclick="insert(9);">9</button>
+                <button id="vezes" class="vezes" onclick="click_sinal('*');">x</button>
+            </div>
+
+            <div class="line3">
+                <button id="quatro" class="quatro" onclick="insert(4);">4</button>
+                <button id="cinco" class="cinco" onclick="insert(5);">5</button>
+                <button id="seis" class="seis" onclick="insert(6);">6</button>
+                <button id="menos" class="menos" onclick="click_sinal('-');">-</button>
+            </div>
+
+            <div class="line4">
+                <button id="um" class="um" onclick="insert(1);">1</button>
+                <button id="dois" class="dois" onclick="insert(2);">2</button>
+                <button id="tres" class="tres" onclick="insert(3);">3</button>
+                <button id="mais" class="mais" onclick="click_sinal('+');">+</button>
+            </div>
+
+            <div class="line5">
+                <button id="zero" class="zero" onclick="insert(0);">0</button>
+                <button id="virgula" class="virgula" onclick="click_sinal(',');">,</button>
+                <button id="igual" class="igual" onclick="executa_igual();">=</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+
+</html>
